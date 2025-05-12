@@ -1,0 +1,14 @@
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    color:aliceblue;
+
+    padding:40px; /* Espaçamento interno*/
+    border:5px solid;
+    margin:100px;
+    /* margin-top em cima */
+    /* margin-bottom em baixo */
+    /* margin-left para a esquerda */
+    /* margin-right para a direita */
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+seletor{
+    propriedade: valor
+}
+
+p{
+    color:grey;
+    line-height: 30px; /* espaçamento entre o texto*/
+}
+
+
+
+h1{
+    /*color:bisque nome da cor*/
+    /* color: #B9ff66 - Hexadeciamal da cor */
+    /* escolhendo a cor pelo pequeno quadrado ao lado da cor */
+    /* rgb */
+    /* rgba: o ultimo é alpha, a opacidade do elemento*/
+    background-color: aqua;
+
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Define a fonte*/
+    font-size: 100px; /*Tamanho da fonte*/
+    font-weight:bold ; /* Peso da ponte */
+     text-transform:uppercase; /* modifica a formatação do texto */
+    
+
+}
+
+h2{
+   
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
