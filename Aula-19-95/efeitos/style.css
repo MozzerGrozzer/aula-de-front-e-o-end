@@ -1,0 +1,86 @@
+@import url('./global.css');
+
+p{
+    font-size: 30px;
+}
+
+.i1{
+    color: var(--cor-primária);
+}
+.i2{
+    color: var(--cor-primária);
+}
+.i3{
+    color: var(--cor-primária);
+}
+
+/* .red1{
+    background-color:red;
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red2{
+    background-color:rgb(236, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red3{
+    background-color:rgb(223, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red4{
+    background-color:rgb(202, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red5{
+    background-color:rgb(189, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red6{
+    background-color:rgb(99, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red7{
+    background-color:rgb(77, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red8{
+    background-color:rgb(56, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red9{
+    background-color:rgb(48, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+}
+.red10{
+    background-color:rgb(22, 0, 0);
+    width: 200px;
+    height:10%;
+    margin:10px;
+    position:relative;
+} */

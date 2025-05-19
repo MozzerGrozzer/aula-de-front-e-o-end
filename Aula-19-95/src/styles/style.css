@@ -1,0 +1,58 @@
+/* body{
+    background-color: rgb(245, 211, 143);
+    background-image: url (https://images.daznservices.com/di/library/DAZN_News/56/9e/wrx_1idui4k1dr0ej1syry7x2ywk1d.jpeg?t=-1426886513);
+    background-repeat: no-repeat;
+
+} */
+
+.static{
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
+    margin:10px; 
+    position:static; /* modo padrão: ele não se move */
+}
+
+.relative{
+    background-color: rgb(43, 226, 58);
+    width: 200px;
+    height: 100px;
+    margin:10px;
+    top:30px;
+    position:relative; /* Se move independente dos elementos mas html ainda conta */
+}
+
+/* .absolute{
+    background-color: mediumpurple;
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    left:100px;
+    position: absolute; /* Html ignora totalmente a existência dele*/
+
+
+/* .container{
+    background-color:darkorange;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+} */
+
+/*.absolute{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    bottom:60px;
+    right:0; /* Respeita o pai, mas só se ele for positon: relative;, é como um agrupamento
+}*/
+
+.menu{
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50px;
+    position:fixed;
+    margin: 5px;
+    right:0;
+}

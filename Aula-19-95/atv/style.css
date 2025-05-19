@@ -1,0 +1,42 @@
+.static{
+    background-color:cadetblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position:relative;
+    left: 80%;
+    border: 1px solid black;
+}
+
+.container{
+    background-color: coral;
+    width: 300px;
+    height: 100px;
+    position: relative;
+
+}
+.absolute{
+    background-color:rgb(255, 255, 255);
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    position:absolute;
+    left:20%;
+    border-radius: 50%;
+}
+.box{
+    background-color:greenyellow;
+    width: 500px;
+    height: 600px;
+    left:20%;
+    margin: 10px;
+    position: relative;
+}
+.fixed{
+    background-color:gray;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    top:0;
+    position:fixed;
+}

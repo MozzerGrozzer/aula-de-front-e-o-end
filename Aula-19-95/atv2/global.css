@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{ --primary-color: orange;
+    --secundary-color: black;
+    --tereciary-color: gray;
+    --primary-radius:20px;
+    --primary-size:20px;
+}
