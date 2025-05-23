@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    margin:1%;
+    background-color: white;
+}
+
+.main{
+    display:flex;
+    margin:1%;
+    gap:16px;
+    font-size: 16px;
+}
+
+button{
+    background-color: white;
+
+    border: 1px solid black;
+    padding: 8px 20px;
+}
+
+.link-dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap:15px;
+    margin: 5px 10px;
+
+    border:none;
+    background-color: white;
+}
+
+.colored{
+    background-color: black;
+    color:white;
+}
+
+.link{
+    color:black;
+    text-transform: capitalize;
+}
+
+.logo-link{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:24px;
+    font-size: 16px;
+
+    padding: 8px 64px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+
+    padding: 30px 2px;
+}
+
+.content-one{
+
+    width: 30%;
+    height: auto;
+    background-color: white;
+    margin:12px 32px 12px 64px;
+
+}
+
+.content-two{
+    width: 30%;
+    height: auto;
+    background-color: white;
+    margin:12px 64px;    
+}
+
+.content-three{
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    margin:20px 16px;    
+}    
+
+
+.pages{
+    display: flex;
+    flex-direction: column;
+
+    margin:50px 12px;
+}
+
+.group-name{
+    margin:20px 16px;
+    font-weight: bolder;
+}
+
+.title{
+    display:flex;
+    font-weight: bold;
+    gap:12px;
+}
+
+.title-two{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-content{
+    margin:2px 36px; 
+}
+
+.Placeholder{
+    width: 40%;
+    margin-right: 24px;
+}
+
+
+.blog{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 8px 0px;
+}
+
+.blog-titles{
+    text-align: start;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.read-more{
+    text-decoration: underline;
+}
