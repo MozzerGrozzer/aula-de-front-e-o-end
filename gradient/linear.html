@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body {
+	background: linear-gradient(-45deg, red, orange, yellow, green, blue, indigo, violet);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.ativo:hover{
+    transition: 20s ease-in;
+    transform: rotate(6666deg) scale(5);
+    cursor:help;
+}
+.ativo{
+    transition: 20s ease-out;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:30% 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    color:yellow;
+    text-decoration: underline;
+}
+h2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:White;
+    text-decoration: underline;
+    font-size: 25px;
+    transform: rotate(-2deg);
+    margin:-20px;
+}
+    </style>
+</head>
+<body>
+    <div class="ativo">
+        <h1>Hello World</h1>
+    <h2>Adoro Gatos!</h2>
+    </div>
+</body>
+</html>
