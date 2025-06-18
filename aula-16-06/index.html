@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+            color:transparent;
+        }
+
+        @keyframes piscar{
+            0%{
+                background-color: red;
+                opacity:1;
+                transform: rotate(70deg);
+                transition: 1s;
+            }
+            50%{
+                background-color: blue;
+                opacity:0;
+                transform: scale(5) rotate(-70deg) translateY(50%);
+                transition: 1s;
+            }            
+            100%{
+                background-color: yellow;
+                opacity:1;
+                transform: scale(2) translateX(50%) rotate(70deg);
+                transition: 1s;
+            }            
+        }
+
+        button:nth-child(2){
+            background-color: aqua;
+            animation: piscar 0.01s infinite;
+        }
+
+        .loading{
+            width: 100px;
+            height: 100px;
+            border:5px solid #808080;
+            border-radius: 50%;
+            animation: girar 2s infinite;
+            border-top: 5px solid blue;
+        }
+
+        @keyframes girar{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes arrow {
+            0%{
+                left:80%;
+            }
+            50%{
+                left:0%;
+            }
+            100%{
+                left:80%;
+            }
+        }
+
+        button:nth-child(4){
+            position: relative;
+            animation: arrow 4s infinite;
+        }
+
+        @keyframes runningX{
+            0%{
+                left:0%;
+                transform: scaleX(1) rotate(0deg);
+            }
+            50%{
+                left:80%;
+                transform: scaleX(1) rotate(-20deg);
+                transition: 1s ease-in-out;
+            }
+            51%{
+                transform: scaleX(-1) rotate(-0deg);
+            }
+            100%{
+                left:0%;
+                transform: scaleX(-1) rotate(-20deg);
+                transition: 1s ease-in-out;
+            }
+        }
+
+        #maroto{
+            width: 10%;
+            animation: runningX 4s infinite;
+            position: relative;
+        }
+        
+        .marioAttack{
+            position: relative;
+        }
+        #mario{
+            bottom:47%;
+            width: 10%;
+            position: absolute;
+            animation: marioStrikesBack 4s infinite;
+            animation-timing-function: 0.3s ease-in ;
+        }
+        #pipe{
+            width: 10%;
+            position: absolute;
+            bottom:4%;
+            right: 45%;
+        }
+        .ceu{
+            background-color: rgb(101, 173, 255);
+            padding: 20%;
+        }
+
+        .grama{
+            background:green;
+            padding:0.5% 50%;
+        }
+
+        .terra{
+            background-color: rgb(107, 75, 38);
+            padding:2% 50%;
+        }
+
+        @keyframes marioStrikesBack{
+            0%{
+                bottom: 4%;
+                left:0%;
+            }
+            20%{
+                bottom:4%;
+                left: 15%;
+                transform: scale(1);
+            }
+            25%{
+                bottom:5%;
+                left: 15%;
+                transform: scale(1,0.5);
+            }
+            25%{
+                bottom:28%;
+                left: 28%;
+                transform: scale(0.5,1) rotate(27deg);
+            }
+            30%{
+                bottom:28%;
+                left: 35%;
+                transform: scale(1) rotate(0deg);
+            }
+            40%{
+                bottom:28%;
+                left: 50%;
+                transform: rotate(0deg);
+            }
+            45%{
+                bottom:80%;
+                left: 100%;
+                transform: rotate(180deg);
+            }
+
+            50%{
+                bottom:80%;
+                left:100%;
+                transform: rotate(180deg);
+            }
+            80%{
+                bottom:80%;
+                left:0%;
+                transform: rotate(180deg);
+            }
+
+            81%{
+                transform: rotate(90deg);
+            }
+
+            99%{
+                transform: rotate(90deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+                bottom: 4%;
+                left:0%;
+            }
+        }
+        /* @keyframes nome-da-animacao{
+            from{
+                propriedade:valor;
+            }
+            to{
+                propriedade:valor;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <p>parágrafo</p>
+    <button>clique aqui</button>
+    <div class="loading"></div>
+    <button>Clique aqui</button>
+    <img src="https://i.gifer.com/M0cI.gif" alt="" id="maroto">    
+    <div class="marioAttack">
+        <img src="https://i.gifer.com/M0cI.gif" alt="" id="mario">
+        <img src="https://i.pinimg.com/1200x/29/9a/80/299a8005ec45ca6e348b72efc5f2328d.jpg" alt="" id="pipe">
+        <div class="ceu"></div>
+        <div class="grama"></div>
+        <div class="terra"></div>
+    </div>
+</body>
+</html>
