@@ -23,15 +23,31 @@
 //     default:console.log("número ausente")
 // }
 
-let dia = 4
+// let dia = 4
 
-switch(dia){
-    case 1:console.log("Domingo");break
-    case 2:console.log("Segunda");break
-    case 3:console.log("Terça");break
-    case 4:console.log("Quarta");break
-    case 5:console.log("Quinta");break
-    case 6:console.log("Sexta");break
-    case 7:console.log("Sábado");break
-    default:console.log("insira número válido")
+// switch(dia){
+//     case 1:console.log("Domingo");break
+//     case 2:console.log("Segunda");break
+//     case 3:console.log("Terça");break
+//     case 4:console.log("Quarta");break
+//     case 5:console.log("Quinta");break
+//     case 6:console.log("Sexta");break
+//     case 7:console.log("Sábado");break
+//     default:console.log("insira número válido")
+// }
+
+// for (início; condição; passo) inicio é onde começa a repetição, a condição é onde deve parar (<=) e o passo é quantidade de numeros para subir até a condição
+
+// for(let i = 0; i <= 10; i = i+5){ // i=i+1 pode ser subtituído por i++
+//     console.log("Adoro Gatos")
+// }
+
+// for(let o = 5; o<= 15; o+=4){
+//     console.log(o)
+// }
+
+// reverso
+
+for(let i = 10; i>=0; i-=1){
+    console.log(i)
 }
