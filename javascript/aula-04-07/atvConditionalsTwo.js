@@ -1,21 +1,21 @@
-let nota = prompt
+let nota = prompt("Insira nota")
 if (nota >= 9)alert("Excelente!!!")
     else if (nota >= 7)alert("Bom!")
         else if (nota >= 5)alert("regular")
 else alert("saia")
 
-let idade = prompt
+let idade = prompt("Insira idade")
 if (idade>=12)alert("R$10")
     else if(idade>=17)alert("R$15")
         else if(idade>=59)alert("R$30")
 else alert("R$ 20")
 
-let peso=prompt
+let peso=prompt("Insira Peso")
 if (peso>=60)alert("catergoria leve")
     else if (peso>=90)alert("catergoria média")
 else alert("catergoria alta")
 
-let dia=prompt
+let dia=prompt("Qual o dia de hoje?")
 if (dia==1)alert("Domingo")
     else if (dia==2)alert("Segunda")
         else if (dia==3)alert("Terça")
@@ -25,7 +25,7 @@ if (dia==1)alert("Domingo")
                         else if (dia==7)alert("Sábado")
 else alert("insira número válido")
 
-let pagamento = prompt
+let pagamento = prompt("Insira pagamento (acima de R$1.500)")
 if(pagamento<=1.500)alert("Sortudo")
     else if(pagamento>=1.501||pagamento<=3.000)alert("10%")
         else if(pagamento>=3.000||pagamento<=5.000)alert("15%")
