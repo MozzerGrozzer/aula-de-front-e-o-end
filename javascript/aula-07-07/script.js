@@ -61,3 +61,33 @@
 
 // somar(29,5)
 
+//função anonima é uma função sem nome
+
+// console.log("Saia")
+
+// setTimeout(function(){
+//     console.log("saia agora")
+// }, 2000)
+
+// return é um valor que será utilizado depois, ela guarda o resultado prévio
+
+// function dobro(numero){
+//     return numero * 2
+// }
+
+// let result = dobro(2)
+// console.log(result)
+
+// function quadrado(numero){
+//     return numero * numero
+// }
+
+// console.log(quadrado(4))
+
+// arrow function (moderna)
+
+const dobrar = (numero) => {
+    console.log(numero * 2) 
+}
+
+dobrar(10)
