@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
+<style>
+    *{padding:0;margin: 0;box-sizing: border-box; font-family: "Rubik", sans-serif;text-decoration: none; border:none;
+    }
+    body{display:flex;justify-content: center; align-items: center; flex-direction: column; width: 100%;height: 100%;
+    background-image: url(https://jornalpolopaulistano.com.br/wp-content/uploads/2020/08/mudanca-de-temperatura.jpg); background-size: cover; background-size:cover; background-repeat: no-repeat;}
+    #inputInsert,#inputResult{
+        display:flex; flex-direction:column;justify-content:center; align-items: center; 
+        border: 2px solid black; background-color: rgb(223, 247, 255); border-radius: 40px; box-shadow: 6px 14px 20px gray;
+        width: 50%;
+        padding:5%; margin:1%;
+        }
+    #inputInsert>h1{
+        background-color: rgb(250, 255, 186); 
+        padding:3% 5%; margin-bottom: 5%;
+        text-transform: uppercase;
+    }
+    #inputInsert>input{
+        font-size:20px;
+    }
+    #inputInsert>button{
+        background-color: rgb(250, 255, 186); box-shadow: 6px 14px 20px gray;
+        margin:5%; padding:3% 5%;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #inputResult>p{
+        font-size: 24px;
+    }
+    #converterResultCelsius,#converterResultFarenheight,#converterResultKelvin{
+        font-weight: bolder; text-decoration: underline;
+    }
+    #converterResultCelsius{background-color: rgb(255, 181, 181);}
+    #converterResultFarenheight{background-color: rgb(200, 255, 195);}
+    #converterResultKelvin{background-color: rgb(195, 195, 255);}
+</style>
 <body>
-    <p>Insira um número em célcius</p>
-    <input type="number" id="temperatureInput" placeholder="insira aqui">
-    <button id="converterBtn">Converter</button>
-    
-    <p>Seu valor em celcius é: <span id="converterResultCelsius"></span></p>
-    <p>Seu valor em farenheight é: <span id="converterResultFarenheight"></span></p>
-    <p>Seu valor em Kelvin é: <span id="converterResultKelvin"></span></p>
+    <section id="inputInsert">
+        <h1>Insira um número em célcius</h1>
+        <input type="number" id="temperatureInput" placeholder="insira aqui">
+        <button id="converterBtn">Converter</button>
+    </section>    
+    <section id="inputResult">
+        <p>Seu valor em celcius é: <span id="converterResultCelsius"></span></p>
+        <p>Seu valor em farenheight é: <span id="converterResultFarenheight"></span></p>
+        <p>Seu valor em Kelvin é: <span id="converterResultKelvin"></span></p>
+    </section>
 </body>
 <script>
     let temperatureInput = document.getElementById('temperatureInput')
@@ -26,15 +67,15 @@
 
     
     converterBtn.addEventListener('click',()=>{
-        converterResultCelsius.innerText = temperatureInput.value
+        converterResultCelsius.innerText = `${temperatureInput.value}ºC`
     })
 
     converterBtn.addEventListener('click', ()=>{
-        converterResultFarenheight.innerText = farenheightFormula()
+        converterResultFarenheight.innerText = `${farenheightFormula()}ºF`
     })
     
     converterBtn.addEventListener('click', ()=>{
-        converterResultKelvin.innerText = kelvinFormula()
+    converterResultKelvin.innerText = `${kelvinFormula()}K`
     })
 
 </script>
