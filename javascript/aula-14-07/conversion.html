@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+</head>
+<body>
+    <p>Insira um número em célcius</p>
+    <input type="number" id="temperatureInput" placeholder="insira aqui">
+    <button id="converterBtn">Converter</button>
+    
+    <p>Seu valor em celcius é: <span id="converterResultCelsius"></span></p>
+    <p>Seu valor em farenheight é: <span id="converterResultFarenheight"></span></p>
+    <p>Seu valor em Kelvin é: <span id="converterResultKelvin"></span></p>
+</body>
+<script>
+    let temperatureInput = document.getElementById('temperatureInput')
+    let converterBtn = document.getElementById('converterBtn')
+    let converterResultCelsius = document.getElementById('converterResultCelsius')
+    let converterResultFarenheight = document.getElementById('converterResultFarenheight')
+    let converterResultKelvin = document.getElementById('converterResultKelvin')
+    
+    const farenheightFormula = () => (temperatureInput.value * 9 / 5) + 32
+    const kelvinFormula = () => temperatureInput.value + 273.15 //0 °C + 273,15 = 273,15 K
+
+    
+    converterBtn.addEventListener('click',()=>{
+        converterResultCelsius.innerText = temperatureInput.value
+    })
+
+    converterBtn.addEventListener('click', ()=>{
+        converterResultFarenheight.innerText = farenheightFormula()
+    })
+    
+    converterBtn.addEventListener('click', ()=>{
+        converterResultKelvin.innerText = kelvinFormula()
+    })
+
+</script>
+</html>
