@@ -10,5 +10,29 @@
     <p>nome: <span id="nome">--</span></p>
     <p>email: <span id="email">--</span></p>
     <p>username: <span id="username">--</span></p>
+    <p id="warning">não aperte espaço</p>
 </body>
+<script>
+    const colors = ["lightGoldenRodYellow","LightGreen","LightCoral"];
+let colorIndex = 0;
+let intervalId = null;
+let warning = document.getElementById('warning')
+
+document.addEventListener("keydown", function(event) {
+    if (event.code === "Space" && intervalId === null) {
+        intervalId = setInterval(() => {
+            document.body.style.backgroundColor = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+        }, 250);
+        warning.innerText='adoro gatos'
+    }
+});
+
+document.addEventListener("keyup", function(event) {
+    if (event.code === "Space" && intervalId !== null) {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+});
+</script>
 </html>
