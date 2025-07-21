@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width: 100%;height: 100%; display:flex; flex-direction: column; justify-content: center; align-items: center; transition: 0.5s ease-in-out;}
+        #woah{display:flex; flex-direction: column; justify-content: center; align-items: center;}
+    </style>
+</head>
+<body>
+    <p id="woah"> presione r g ou b</p>
+</body>
+<script>
+    let woah = document.getElementById('woah')
+    document.addEventListener('keydown',function(event){
+        switch(event.key){
+            case 'b':woah.innerText="B";document.body.style.backgroundColor="dodgerblue",document.getElementById('woah').style.color="white";break
+            case 'r':woah.innerText="R";document.body.style.backgroundColor="crimson",document.getElementById('woah').style.color="white";break
+            case 'W':woah.innerText="W";document.body.style.backgroundColor="white",document.getElementById('woah').style.color="white";break
+            case 'g':woah.innerText="G";document.body.style.backgroundColor="forestgreen",document.getElementById('woah').style.color="white";break
+        }
+    })
+</script>
+</html>
