@@ -14,6 +14,8 @@ const searchFunction=(pokemon)=>{
             console.log(data.id)
             console.log(data.sprites.versions["generation-v"]["black-white"].animated.front_default)
 
+            searchFunction()=(data.id)
+
             pokemon_image.src=data.sprites.versions["generation-v"]["black-white"].animated.front_default
             pokemon_name.innerText=data.name
             pokemon_number.innerText=data.id

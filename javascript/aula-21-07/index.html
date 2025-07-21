@@ -10,7 +10,7 @@
     </style>
 </head>
 <body>
-    <p id="woah"> presione r g ou b</p>
+    <p id="woah">Presione seu teclado</p>
 </body>
 <script>
     let woah = document.getElementById('woah')
@@ -18,8 +18,23 @@
         switch(event.key){
             case 'b':woah.innerText="B";document.body.style.backgroundColor="dodgerblue",document.getElementById('woah').style.color="white";break
             case 'r':woah.innerText="R";document.body.style.backgroundColor="crimson",document.getElementById('woah').style.color="white";break
-            case 'W':woah.innerText="W";document.body.style.backgroundColor="white",document.getElementById('woah').style.color="white";break
+            case 'w':woah.innerText="W";document.body.style.backgroundColor="white",document.getElementById('woah').style.color="black";break
             case 'g':woah.innerText="G";document.body.style.backgroundColor="forestgreen",document.getElementById('woah').style.color="white";break
+            case 'f':woah.innerText="F";document.body.style.backgroundColor="Fuchsia",document.getElementById('woah').style.color="black";break
+            case 'h':woah.innerText="H";document.body.style.backgroundColor="HotPink",document.getElementById('woah').style.color="black";break
+            case 'i':woah.innerText="I";document.body.style.backgroundColor="Indigo",document.getElementById('woah').style.color="white";break
+            case 'l':woah.innerText="L";document.body.style.backgroundColor="LightSalmon",document.getElementById('woah').style.color="black";break
+            case 'x':woah.innerText="X";document.body.style.backgroundColor="MediumOrchid",document.getElementById('woah').style.color="white";break
+            case 'z':woah.innerText="Z";document.body.style.backgroundColor="NavajoWhite",document.getElementById('woah').style.color="white";break
+            case 'c':woah.innerText="C";document.body.style.backgroundColor="Navy",document.getElementById('woah').style.color="white";break
+            case 'q':woah.innerText="Q";document.body.style.backgroundColor="Peru",document.getElementById('woah').style.color="white";break
+            case 'o':woah.innerText="O";document.body.style.backgroundColor="SandyBrown",document.getElementById('woah').style.color="white";break
+            case 'p':woah.innerText="P";document.body.style.backgroundColor="Violet",document.getElementById('woah').style.color="white";break
+            case 'e':woah.innerText="E";document.body.style.backgroundColor="LightGoldenRodYellow",document.getElementById('woah').style.color="black";break
+            case 't':woah.innerText="T";document.body.style.backgroundColor="LightPink",document.getElementById('woah').style.color="black";break
+            case 'u':woah.innerText="U";document.body.style.backgroundColor="LightCyan",document.getElementById('woah').style.color="black";break
+            case 'y':woah.innerText="Y";document.body.style.backgroundColor="FireBrick",document.getElementById('woah').style.color="black";break
+            default:woah.innerText="Inválido",document.style.backgroundColor="DimGrey";
         }
     })
 </script>
